@@ -1,4 +1,4 @@
-TWRP device tree for the Billow X100V6
+TWRP device tree for the Acer B1-790
 ========================================================
 
-For building TWRP only.
+For building TWRP only. (NOT BEEN TESTED YET // WORK IN PROGRESS)
