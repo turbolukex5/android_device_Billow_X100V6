@@ -26,8 +26,8 @@ TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 
 # Kernel
-TARGET_PREBUILT_KERNEL := device/Billow/X100V6/kernel
-BOARD_MKBOOTIMG_ARGS := --pagesize 2048 --cmdline bootopt=64S3,32N2,64N2 --base 0x40078000 --kernel_offset 0x00008000 --ramdisk_offset 0x03f88000 --second_offset 0x00e88000 --tags_offset 0x0df88000
+TARGET_PREBUILT_KERNEL := device/barricadewifi/kernel
+BOARD_MKBOOTIMG_ARGS := --pagesize 0x800 --cmdline bootopt=64S3,32N2,64N2 --base 0x40078000 --kernel_offset 0x00008000 --ramdisk_offset 0x44000000 --second_offset 0x40f00000 --tags_offset 0x4e000000
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x1000000
@@ -43,7 +43,7 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
 
 # TWRP-Specific
-TARGET_RECOVERY_FSTAB := device/Billow/X100V6/recovery/etc/twrp.fstab
+TARGET_RECOVERY_FSTAB := device/barricadewifi/recovery/etc/twrp.fstab
 BOARD_SUPPRESS_SECURE_ERASE := true
 TW_THEME := portrait_hdpi
 RECOVERY_TOUCHSCREEN_SWAP_XY := true
