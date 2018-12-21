@@ -1,4 +1,4 @@
-LOCAL_PATH := device/Billow/X100V6
+LOCAL_PATH := device/barricadewifi
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := $(LOCAL_PATH)/kernel
@@ -13,4 +13,4 @@ PRODUCT_COPY_FILES += \
 
 $(call inherit-product, build/target/product/full.mk)
 
-PRODUCT_NAME := X100V6
+PRODUCT_NAME := barricadewifi
